@@ -9,11 +9,12 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Document(collection = "products")
+@Document(collection = "laptops")
 public class Product {
     @Id
     private Integer id;
     private String brand;
+    private String model;
     private String procesor;
     private String os;
     private String description;
